@@ -3,10 +3,9 @@ from dataclasses import dataclass
 from enum import StrEnum
 from typing import ClassVar, Literal, Self, overload
 
-from bzzz.joueur import Joueur
-from bzzz.position import DirectionType, Position
+from .joueur import Joueur
+from .position import DirectionType, Position
 from ia import AbeilleDict, AbeilleProprietaireDict
-
 
 class AbeilleType(StrEnum):
     OUVRIERE = "OUV"

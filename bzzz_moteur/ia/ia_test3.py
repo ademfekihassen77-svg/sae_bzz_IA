@@ -4,7 +4,7 @@ import random
 
 
 class VOSNOMS_IA(MoteurIA):
-    nom = "TEST"
+    nom = "ADEM"
 
     def __init__(self, joueur_id: str, ncases: int, max_tours: int, temps_ko: int) -> None:
         self.joueur_id = joueur_id
