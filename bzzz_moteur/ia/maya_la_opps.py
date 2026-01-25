@@ -28,20 +28,22 @@ class VOSNOMS_IA(MoteurIA):
         mes_abeilles = jeu["moi"]["abeilles"]
         nb_abeilles = len(mes_abeilles)
 
-        if nectar < cout_ponte:
-            return "RIEN"
 
-        # Stratégie simple et efficace
-        if tour < 20:
-            if nb_abeilles < 2: return "ECL"  # Un peu de vision au début
-            return "OUV"
-        elif tour < 150:
-            # On priorise la force de travail
-            return "OUV"
+        if nb_abeilles < 7:
+            if nectar < cout_ponte:
+                return "RIEN"
 
-        # Fin de partie : on ne pond que si on est très riche
-        if nectar > cout_ponte * 5:
-            return "OUV"
+            # Stratégie simple et efficace
+            if tour < 20:
+                if nb_abeilles < 2: return "ECL"  # Un peu de vision au début
+                return "OUV"
+            elif tour < 150:
+                # On priorise la force de travail
+                return "OUV"
+
+            # Fin de partie : on ne pond que si on est très riche
+            if nectar > cout_ponte * 5:
+                return "OUV"
 
         return "RIEN"
 
