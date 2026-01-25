@@ -16,7 +16,7 @@ NECTAR_INITIAL = 5
 # Le nombre maximal de nectar que peut contenir une fleur
 MAX_NECTAR = 50
 # Le nombre de tours maximal de la partie
-TIME_OUT = 250
+TIME_OUT = 350
 # Le cout en nectar de la ponte d'une abeille
 COUT_PONTE = 5
 # Le nombre de tours qu'une abeille reste KO après avoir raté son esquive

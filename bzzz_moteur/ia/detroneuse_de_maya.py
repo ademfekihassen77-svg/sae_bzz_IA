@@ -27,7 +27,7 @@ class VOSNOMS_IA(MoteurIA):
         mes_abeilles = jeu["moi"]["abeilles"]
         nb_abeilles = len(mes_abeilles)
 
-        if nb_abeilles < 7:
+        if nb_abeilles < 9:
             if nectar < cout_ponte:
                 return "RIEN"
 
