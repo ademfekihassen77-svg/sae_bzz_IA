@@ -885,7 +885,7 @@ class FenetreJeu(tk.Tk):
         slider_vitesse = tk.Scale(
             panneau_de_controle,
             from_=-2.0,
-            to=2.0,
+            to=4.0,
             resolution=0.1,
             orient="horizontal",
             variable=self.facteur_vitesse_log,

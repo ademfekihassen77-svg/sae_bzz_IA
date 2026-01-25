@@ -18,3 +18,4 @@ with Path(f"replays/{filename}").open("rt") as f:
     jeu = Jeu.creer_jeu_depuis_fichier_replay(f)
 
 afficher_fenetre_jeu_replay(jeu)
+
